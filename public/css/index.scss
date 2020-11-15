@@ -4,7 +4,6 @@ body {
     font-family: 'Montserrat';
 }
 
-
 /*** Styling for Header ***/
 .navbar {
     margin-top: -1rem;
@@ -16,7 +15,7 @@ body {
 .logo {
     display: flex;
     margin-left: 2rem;
-  }
+}
   
 .logo a {
     text-decoration: none;
@@ -28,7 +27,7 @@ body {
 .underline {
     display: inline-block;
     position: relative;
-  }
+}
   
   
 .underline:after {
@@ -47,7 +46,7 @@ body {
     display: flex;
     margin-right: 1rem;
     h4 {
-        padding: 5px
+        padding: 10px
     }
     span {
         display: inline-block;
@@ -59,14 +58,85 @@ body {
         position: absolute;
         display: block;
         z-index: -1;
-        width: 100%;
-        height: 1rem;
-        margin-top: -2.2rem;
-        
-    }
-    
+        width: 80%;
+        height: .5rem;
+        margin-top: -2.5rem;
+        margin-left: 1.1rem;  
+    }  
 }
 
+/*** Styling for intro text ***/
+.intro_text {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    height: 15rem;
+    span {
+        display: inline-block;
+        position: relative;
+        color: #218ffe;
+    }
+    span::after {
+        content: '';
+        background: #f99e1a;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 104%;
+        height: 3.5rem;
+        margin-top: -2rem;
+        margin-left: -.3rem;
+    }
+    h3{
+        color:#43484c
+    }
+  }
+
+/*** Styling for about me ***/
+.about_me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 800;
+    max-width: 40rem;
+    margin-left: 35rem;
+    .about_me_header {
+        margin-left: -25rem;
+    }
+    span {
+        display: inline-block;
+        position: relative;
+    }
+    span::after {
+        content: '';
+        background: #f99e1a;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 115%;
+        height: .75rem;
+        margin-top: -0.7rem;
+        margin-left: 1rem;  
+    } 
+    img{
+        padding: 25px;
+        height: 15rem;
+    }
+    .about_me_info {
+        display: flex;
+        flex-direction: row;
+        color:#43484c
+    }
+    .about_me_text {
+        padding-left: 25px;
+    }
+    .skill_list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(60px, 280px));
+    }
+  }
 
 
 

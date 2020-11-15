@@ -12,25 +12,25 @@ let tl = anime.timeline({
 })
 
 tl.add({
-    targets: '.projectDiv',
+    targets: '.project_div',
     width: '0%'
 })
 
 tl.add({
-    targets: '.projectDiv',
+    targets: '.project_div',
     width: '100%',
     delay: anime.stagger(100),
 
 })
 
  tl.add({
-    targets: '.projectDiv',
+    targets: '.project_div',
     width: '95%',
     delay: anime.stagger(100)
 })
 
 // PROJECTS //
-$(".projectDiv").on('click', function(){
+$(".project_div").on('click', function(){
     let button = $(this).children('.exitbutton')
     let box = $(this).children('.transbox');
     box.show()

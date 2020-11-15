@@ -4,6 +4,39 @@ body {
   font-family: 'Montserrat';
 }
 
+/*** Styling for Header ***/
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 2rem;
+}
+
+.logo a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2.7rem;
+  color: rgba(249, 158, 26, 0.84);
+}
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:after {
+  content: '';
+  background: #f99e1a;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  width: 100%;
+  height: 1.5rem;
+  margin-top: -2.5rem;
+  margin-left: 0.4rem;
+}
+
+/*** Styling for Project Divs ***/
 section {
   display: -ms-grid;
   display: grid;
@@ -11,7 +44,7 @@ section {
       grid-template-columns: repeat(6, auto);
 }
 
-section .projectDiv {
+section .project_div {
   background-color: black;
   height: 100vh;
   border-radius: 1%;
@@ -51,6 +84,7 @@ section #project_six {
   background-size: cover;
 }
 
+/*** Styling for text/transparent boxes in project divs ***/
 .transbox {
   text-align: center;
   margin: 30px;

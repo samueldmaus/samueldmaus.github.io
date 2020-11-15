@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link href="css/index.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.js" integrity="sha512-iaZ8D6RzguOWQ+B5SLJCHPid3/2UaVIFnsNJHy068pv3r5G6kYOe+XufLqd6qNrQmaHeYR0iVyu2xkXB2llnMg==" crossorigin="anonymous"></script>
+    <script src="https://82mou.github.io/threejs/js/OrbitControls.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+    <title>Sam Maus Portfolio</title>
+  </head>
+  <body>
+
+    <div id="root"></div>
+    <img src="./images/sam.png" alt = "Sam Maus"/>
+    <section>
+      <div id="project_one" class="projectDiv">
+        <div class="transbox">
+          <h2>FRIENDLY WAGER</h2>
+          <p>
+            'Friendly Wager' is a mobile app that allows you to create and accept bets on NFL games between you and your friends. 
+            There are two types of bets that you can make or accept from your friends - 1) the over/under and 2) the spread. This app uses two different APIs to 
+            automatically display the games for the current week, the betting odds, and calculate the winner of these bets.
+          </p>
+        </div>
+      </div>
+
+      <div id= "project_two" class="projectDiv"></div>
+        <div class="transbox">
+          <h2>START OVERWATCH</h2>
+          <p>
+            'Start Overwatch' is an application aimed at beginner Overwatch players. 
+            'Start Overwatch' has detailed descriptions and outlines of all the heroes and map in the game of Overwatch. It is meant to help new players better understand the complex interactions that happen in the game, and thus improve their gameplay.
+            <br/>
+            Users will be asked to either register for an account or sign into an existing account. Upon logining in, users can either view heroes, maps, or team compositions. 
+            The heroes tab will display all the heroes in Overwatch, including a picture and a description of all their abilities. The maps tab will allow users to view all maps, including a short description of the map and 3 heroes that play well on the selected map. Users can favorite individual heroes and maps to save them to their account for easy access later. 
+            The team composition tab allows users to create and save their own team compositions based on the 2-2-2 role rules. 
+            Team compositions can be saved to their user account and given a unique name.
+          </p>
+        </div>
+      </div>
+
+      <div id= "project_three" class="projectDiv">
+        <div class="transbox">
+          <h2>ROUTE PLANNER</h2>
+          <p>Route Planner is an application made with C++ using the Open Street Map open-source project. 
+            The application using the A* Search Algorithm to search through a destinated map area to find a route between the user's starting and ending nodes.
+            The application will prompt the user/programmer to input a starting and ending node once the application is ran. Nodes 
+            are via x and y coordinates in this application starting with (0, 0) as the bottom right of the map and (100, 100) being the 
+            top left. X and Y coordinates must be between 0 and 100.
+          </p>
+        </div>
+      </div>
+
+      <div id= "project_four" class="projectDiv">
+        <div class="transbox">
+          <h2>MOVIE GALLERY</h2>
+        </div>
+      </div>
+
+      <div id= "project_five" class="projectDiv">
+        <div class="transbox">
+          <h2>PONG</h2>
+          <p>
+            This is a simple pong game created using the Lua scripting and LOVE 2D 
+            game framework. The game will keep track of the scores of the players 
+            and declare a winner after one player reaches a score of 10. 
+            The game has two modes, 'play' and 'practice'. At launch, press 1 for 'Play' mode or 2 for 'Practice' mode.
+          </p>
+        </div>
+      </div>
+
+      <div id= "project_six" class="projectDiv">
+        <div class="transbox">
+          <h2>CALCULATOR</h2>
+          <p>This is the client-side/front-end for the Challenge Calculator (see the python server-side/back-end repo here: https://github.com/samueldmaus/challenge_calculator_backend_python). 
+            Client side is built using React. Enter a calculator and hit the '=' key. The equation will be calculated 
+            based on the operater that was used and displayed below in the 'Equations' sections. The 'Equations' sections displays the last 10 equations entered, starting with the most recent. 
+            Grommet, a react-based framework, was used for the UI of the Calculator.</p>
+        </div>
+      </div>
+    </section>
+    <h1> THIUS IS SMA MAUS</h1>
+    <script src="script.js"></script>
+  </body>
+</html>

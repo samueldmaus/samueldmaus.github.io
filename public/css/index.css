@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: 'Montserrat';
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[6];
+      grid-template-columns: repeat(6, auto);
+}
+
+section .projectDiv {
+  background-color: black;
+  height: 100vh;
+  border-radius: 1%;
+  max-width: 75vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section #project_one {
+  background-image: url("../images/friendlywager.JPG");
+  background-size: cover;
+}
+
+section #project_two {
+  background-image: url("../images/ow.png");
+  background-size: cover;
+}
+
+section #project_three {
+  background-image: url("../images/routeplanner.png");
+  background-size: cover;
+}
+
+section #project_four {
+  background-image: url("../images/moviesaga.PNG");
+  background-size: cover;
+}
+
+section #project_five {
+  background-image: url("../images/pong.PNG");
+  background-size: cover;
+}
+
+section #project_six {
+  background-image: url("../images/calculator.PNG");
+  background-size: cover;
+}
+
+.transbox {
+  text-align: center;
+  margin: 30px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  opacity: .8;
+  border-radius: 5%;
+}
+
+.transbox > * {
+  color: black;
+  margin: 5%;
+  font-weight: bold;
+}
+
+.exitbutton {
+  border-radius: 50%;
+}
+/*# sourceMappingURL=index.css.map */

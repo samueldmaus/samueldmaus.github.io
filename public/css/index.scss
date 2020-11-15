@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Montserrat';
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+
+    .projectDiv {
+        background-color: black;
+        height: 100vh;
+        border-radius: 1%;
+        max-width: 75vh;
+        align-items: center;
+    
+    }
+    #project_one {
+        background-image: url('../images/friendlywager.JPG');
+        background-size: cover;
+
+    }
+    #project_two {
+        background-image: url('../images/ow.png');
+        background-size: cover;
+    }
+    #project_three {
+        background-image: url('../images/routeplanner.png');
+        background-size: cover;
+
+    }
+    #project_four {
+        background-image: url('../images/moviesaga.PNG');
+        background-size: cover;
+    }
+    #project_five {
+        background-image: url('../images/pong.PNG');
+        background-size: cover;
+
+    }
+    #project_six {
+        background-image: url('../images/calculator.PNG');
+        background-size: cover;
+    }
+    
+}
+
+.transbox {
+    text-align: center;
+    margin: 30px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    opacity: .8;
+    border-radius: 5%;
+}
+
+.transbox>* {
+    color: black;
+    margin: 5%;
+    font-weight: bold;
+}
+
+.exitbutton {
+    border-radius: 50%;
+}
+

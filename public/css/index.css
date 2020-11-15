@@ -191,6 +191,38 @@ body {
 }
 
 /*** Styling for Project Divs ***/
+.project_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #405275;
+  padding-bottom: 15px;
+}
+
+.project_title span {
+  display: inline-block;
+  position: relative;
+}
+
+.project_title span::after {
+  content: '';
+  background: #f99e1a;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  width: 115%;
+  height: 2rem;
+  margin-top: -1.5rem;
+  margin-left: -.5rem;
+}
+
 section {
   display: -ms-grid;
   display: grid;
@@ -200,7 +232,7 @@ section {
 
 section .project_div {
   background-color: black;
-  height: 100vh;
+  height: 70vh;
   border-radius: 1%;
   max-width: 75vh;
   -webkit-box-align: center;

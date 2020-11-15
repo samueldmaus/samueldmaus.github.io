@@ -144,15 +144,36 @@ body {
 }
 
 
-
 /*** Styling for Project Divs ***/
+.project_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#405275;
+    padding-bottom: 15px;
+    span {
+        display: inline-block;
+        position: relative;
+    }
+    span::after {
+        content: '';
+        background: #f99e1a;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 115%;
+        height: 2rem;
+        margin-top: -1.5rem;
+        margin-left: -.5rem;
+    } 
+}
 section {
     display: grid;
     grid-template-columns: repeat(6, auto);
 
     .project_div {
         background-color: black;
-        height: 100vh;
+        height: 70vh;
         border-radius: 1%;
         max-width: 75vh;
         align-items: center;

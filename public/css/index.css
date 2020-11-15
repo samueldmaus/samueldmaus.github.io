@@ -117,6 +117,16 @@ body {
 }
 
 /*** Styling for about me ***/
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 45px;
+}
+
 .about_me {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,8 +139,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 800;
-  max-width: 40rem;
-  margin-left: 35rem;
+  max-width: 45rem;
 }
 
 .about_me .about_me_header {

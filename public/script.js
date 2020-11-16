@@ -43,7 +43,7 @@ anime({
 anime({
         targets: '.underline',
         rotate: 360,
-        delay: 5400,
+        delay: 5000,
         loop: true,
         
 })
@@ -52,6 +52,8 @@ anime({
 $("#email_link").on('click', function(){
     window.location.href = "mailto:samueldmaus@gmail.com"
 })
+
+$()
 
 // PROJECTS //
 $(".project_div").on('click', function(){

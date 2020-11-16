@@ -46,7 +46,7 @@ body {
 #navbar_right {
     display: flex;
     margin-right: 1rem;
-    h4 {
+    h3 {
         padding: 10px
     }
     span {
@@ -61,7 +61,7 @@ body {
         z-index: -1;
         width: 80%;
         height: .5rem;
-        margin-top: -2.5rem;
+        margin-top: -2.3rem;
         margin-left: 1.1rem;  
     }  
 }
@@ -194,7 +194,7 @@ section {
         height: 70vh;
         border-radius: 1%;
         max-width: 75vh;
-        align-items: center;
+        align-content: center;
     }
     #project_one {
         background-image: url('../images/friendlywager.JPG');
@@ -226,17 +226,15 @@ section {
 
 /*** Styling for text/transparent boxes in project divs ***/
 .transbox {
+    margin: auto;
+    margin-top: 2rem;
     text-align: center;
-    margin: 30px;
     background-color: #ffffff;
     border: 2px solid black;
     opacity: .8;
     border-radius: 5%;
+    max-width: 55vh;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.19), 0 6px 6px 5px rgba(0, 0, 0, 0.23);
-    .transbox>* {
-        margin: 5%;
-        font-weight: bold;
-    }
     span {
         display: inline-block;
         position: relative;
@@ -251,6 +249,9 @@ section {
         height: 1.25rem;
         margin-top: -1rem;
         margin-left: .5rem;
+    }
+    p {
+        margin:1rem;
     }
 }
 

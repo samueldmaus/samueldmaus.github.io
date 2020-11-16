@@ -57,7 +57,7 @@ body {
   margin-right: 1rem;
 }
 
-#navbar_right h4 {
+#navbar_right h3 {
   padding: 10px;
 }
 
@@ -74,7 +74,7 @@ body {
   z-index: -1;
   width: 80%;
   height: .5rem;
-  margin-top: -2.5rem;
+  margin-top: -2.3rem;
   margin-left: 1.1rem;
 }
 
@@ -327,9 +327,8 @@ section .project_div {
   height: 70vh;
   border-radius: 1%;
   max-width: 75vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 section #project_one {
@@ -364,19 +363,16 @@ section #project_six {
 
 /*** Styling for text/transparent boxes in project divs ***/
 .transbox {
+  margin: auto;
+  margin-top: 2rem;
   text-align: center;
-  margin: 30px;
   background-color: #ffffff;
   border: 2px solid black;
   opacity: .8;
   border-radius: 5%;
+  max-width: 55vh;
   -webkit-box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.19), 0 6px 6px 5px rgba(0, 0, 0, 0.23);
           box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.19), 0 6px 6px 5px rgba(0, 0, 0, 0.23);
-}
-
-.transbox .transbox > * {
-  margin: 5%;
-  font-weight: bold;
 }
 
 .transbox span {
@@ -394,5 +390,9 @@ section #project_six {
   height: 1.25rem;
   margin-top: -1rem;
   margin-left: .5rem;
+}
+
+.transbox p {
+  margin: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

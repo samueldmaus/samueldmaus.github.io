@@ -37,20 +37,20 @@
       </span>
       <div id="navbar_right">
         <span>
-          <h4>contact</h4>
+          <h3>contact</h3>
         </span>
         <span>
-          <h4>github</h4>
+          <h3>github</h3>
         </span>
         <span>
-          <h4>resume</h4>
+          <h3>resume</h3>
         </span>
       </div>
     </div>
 
     <!-- Intro Text -->
     <div class="intro_text">
-      <h1>Hi there!  <span id="wave_span">👋 </span>  I'm Sam!</h1>
+      <h1>Hi there!  <span id="wave_span">👋 </span>  I'm Sam Maus!</h1>
       <h2>I'm a <span id="intro_span"><b>software developer & engineer</b></span></h2>
       <h3>Thank you for visiting my page!</h3> 
     </div>
@@ -98,9 +98,19 @@
         <div class="transbox">
           <h2><span>FRIENDLY WAGER</span></h2>
           <p>
-            'Friendly Wager' is a mobile app that allows you to create and accept bets on NFL games between you and your friends. 
-            There are two types of bets that you can make or accept from your friends - 1) the over/under and 2) the spread. This app uses two different APIs to 
-            automatically display the games for the current week, the betting odds, and calculate the winner of these bets.
+            'Friendly Wager' is a sports betting and social networking mobile application that allows users to create and accept bets on NFL games between with their friends. 
+            There are two types of bets that a user can make or accept from their friends - 1) the over/under and 2) the spread. This application uses two different APIs to 
+            automatically display the games for the current NFL week, the betting odds, and calculate the winner of these bets.
+          </p>
+          <p>
+            This application divers from traditional sports betting in that it pits two 'friends' against each other. In other words, once a user places
+            a bet on an NFL game, the bet is not technically 'placed' yet. The user needs one of their friends to accept the other side of the bet. 
+            For example, if a game has an over/under of 50 points and the user bets the under, they then need a friend to accept the over; the other side of the bet.
+            Once a bet has two friends involved, it is officially active. If a bet is never accepted by a friend, the bet is erased once the NFL game starts.
+          </p>
+          <p>
+            The social networking aspect of the application comes into play as users must be friends with each other in order to accept each other's bets.
+            The application also keeps a detailed betting history between friends.
           </p>
         </div>
       </div>
@@ -108,6 +118,18 @@
       <div id="project_two" class="project_div">
         <div class="transbox">
           <h2><span>START OVERWATCH</span></h2>
+          <p>
+            'Start Overwatch' is an application aimed at beginner Overwatch players. 'Start Overwatch' has detailed descriptions
+            and outlines of all the heroes and map in the game of Overwatch. It is meant to help new players better understand
+            the complex interactions that happen in the game, and thus improve their gameplay.
+          </p>
+          <p>
+            After creating an account, users can either view heroes, maps, or team compositions. The heroes tab will bring the user
+            to a page displaying all the heroes in Overwatch. Each hero can be selected to view a more in-depth description.
+            The map tab will do the same thing for the user, except obviously displaying all of the maps in the game instead. The 
+            team composition tab allows the user to create a team composition, based on 2-2-2 role rules. All team compositions, heroes,
+            and maps can be saved/favorited for easy access at a later date.
+          </p>
         </div>
       </div>
 
@@ -120,12 +142,25 @@
             are via x and y coordinates in this application starting with (0, 0) as the bottom right of the map and (100, 100) being the 
             top left. X and Y coordinates must be between 0 and 100.
           </p>
+          <p>Route Planner will ignore man-made and natural obstacles, such as a building or river.
+            This application is built using cmake and displayed using the IO2D graphics engine. Check the repo for 
+            instructions getting them installed. I suggest running this application on a Linux machine (or a Linux virutal environment)
+            as getting all the dependencies (cmake, make, gcc/g++, & IO2D) can be challenging on Mac and especially challenging on Windows.
+          </p>
         </div>
       </div>
 
       <div id= "project_four" class="project_div">
         <div class="transbox">
           <h2><span>MOVIE GALLERY</span></h2>
+          <p>The Movie Gallery application lets users keep track of their favorite movies. To add a favorite movie, simply select the '+' icon at the top. 
+            The user will be brought to a form that allows them to input the movie title, image path/url, description, and genre. Add the movie to the database
+            and it will now appear on the home page.
+          </p>
+          <p>
+            To view more information about a movie, click the 'i'(information) icon below the movie. The user will be redirected to that movie's page where
+            the movie information will be displayed.
+          </p>
         </div>
       </div>
 
@@ -138,16 +173,23 @@
             and declare a winner after one player reaches a score of 10. 
             The game has two modes, 'play' and 'practice'. At launch, press 1 for 'Play' mode or 2 for 'Practice' mode.
           </p>
+          <p>In play mode, which is user vs. user, user 1 controls the right paddle using the 'W' & 'S' keys to move and down, respectively.
+            User 2 controls the left paddle using the 'Up' & 'Down' arrows keys. In practice mode, which is user vs. computer, 
+            the user controls the right paddle using either the 'W' & 'S' or 'Up' & 'Down' keys. The left paddle is controls by the computer.
+            In both game modes, a point is scored by getting the ball past your opponent's paddle and into their "goal".
+            First to score 10 points win in both modes.
+          </p>
         </div>
       </div>
 
       <div id= "project_six" class="project_div">
         <div class="transbox">
           <h2><span>CALCULATOR</span></h2>
-          <p>This is the client-side/front-end for the Challenge Calculator (see the python server-side/back-end repo here: https://github.com/samueldmaus/challenge_calculator_backend_python). 
-            Client side is built using React. Enter a calculator and hit the '=' key. The equation will be calculated 
+          <p>This is the client-side/front-end for a Challenge Calculator (see the python server-side/back-end repo here: https://github.com/samueldmaus/challenge_calculator_backend_python). 
+            This client side is built using React. Grommet, a react-based framework, was used for the UI of the Calculator. Enter a calculation and hit the '=' key. The equation will be calculated 
             based on the operater that was used and displayed below in the 'Equations' sections. The 'Equations' sections displays the last 10 equations entered, starting with the most recent. 
-            Grommet, a react-based framework, was used for the UI of the Calculator.</p>
+          </p>
+          <p>Note that the calculator can only handle two positive integers (ex. 2 + 2).</p>
         </div>
       </div>
     </section>

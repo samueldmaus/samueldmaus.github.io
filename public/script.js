@@ -43,7 +43,7 @@ anime({
 anime({
         targets: '.underline',
         rotate: 360,
-        delay: 5000,
+        delay: 5400,
         loop: true,
         
 })

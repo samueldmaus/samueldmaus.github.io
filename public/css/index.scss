@@ -46,7 +46,7 @@ body {
 #navbar_right {
     display: flex;
     margin-right: 1rem;
-    h3 {
+    h2 {
         padding: 10px
     }
     span {
@@ -59,11 +59,11 @@ body {
         position: absolute;
         display: block;
         z-index: -1;
-        width: 80%;
+        width: 50%;
         height: .5rem;
-        margin-top: -2.3rem;
-        margin-left: 1.1rem;  
-    }  
+        margin-top: -2.5rem;
+        margin-left: 3rem;  
+    }
 }
 
 /*** Styling for intro text ***/
@@ -72,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
     height: 15rem;
     #intro_span {
         display: inline-block;
@@ -117,7 +117,7 @@ body {
 .container{
     display: flex;
     justify-content: center;
-    padding-bottom: 45px;
+    padding-bottom: 20px;
 }
 .about_me {
     display: flex;
@@ -169,7 +169,7 @@ body {
     flex-direction: column;
     align-items: center;
     color:#405275;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     span {
         display: inline-block;
         position: relative;
@@ -252,6 +252,29 @@ section {
     }
     p {
         margin:1rem;
+    }
+    .list_span {
+        display: inline-block;
+        position: relative;
+    }
+    .list_span::after {
+        content: '';
+        background: #f99e1a;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 90%;
+        height: .75rem;
+        margin-top: -.75rem;
+        margin-left: 1.1rem;  
+    }
+    .built_list {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(60px, 280px));
+        li {
+            margin:auto;
+            text-align: left;
+        }
     }
 }
 

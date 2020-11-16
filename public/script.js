@@ -48,6 +48,11 @@ anime({
         
 })
 
+// Email logic //
+$("#email_div").on('click', function(){
+    window.location.href = "mailto:samueldmaus@gmail.com"
+})
+
 // PROJECTS //
 $(".project_div").on('click', function(){
     let button = $(this).children('.exitbutton')

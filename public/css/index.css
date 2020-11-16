@@ -57,7 +57,7 @@ body {
   margin-right: 1rem;
 }
 
-#navbar_right h3 {
+#navbar_right h2 {
   padding: 10px;
 }
 
@@ -72,10 +72,10 @@ body {
   position: absolute;
   display: block;
   z-index: -1;
-  width: 80%;
+  width: 50%;
   height: .5rem;
-  margin-top: -2.3rem;
-  margin-left: 1.1rem;
+  margin-top: -2.5rem;
+  margin-left: 3rem;
 }
 
 /*** Styling for intro text ***/
@@ -91,7 +91,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3rem;
+  margin-top: 1rem;
   height: 15rem;
   /* Animation for waving hand */
 }
@@ -216,7 +216,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 45px;
+  padding-bottom: 20px;
 }
 
 .about_me {
@@ -295,7 +295,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #405275;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 
 .project_title span {
@@ -394,5 +394,34 @@ section #project_six {
 
 .transbox p {
   margin: 1rem;
+}
+
+.transbox .list_span {
+  display: inline-block;
+  position: relative;
+}
+
+.transbox .list_span::after {
+  content: '';
+  background: #f99e1a;
+  position: absolute;
+  display: block;
+  z-index: -1;
+  width: 90%;
+  height: .75rem;
+  margin-top: -.75rem;
+  margin-left: 1.1rem;
+}
+
+.transbox .built_list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(60px, 280px))[2];
+      grid-template-columns: repeat(2, minmax(60px, 280px));
+}
+
+.transbox .built_list li {
+  margin: auto;
+  text-align: left;
 }
 /*# sourceMappingURL=index.css.map */

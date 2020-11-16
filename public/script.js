@@ -19,6 +19,7 @@ tl.add({
 tl.add({
     targets: '.project_div',
     width: '100%',
+    boxShadow: '0 10px 30px 5px rgba(0, 0, 0, 0.19), 0 10px 10px 5px rgba(0, 0, 0, 0.23)',
     delay: anime.stagger(100),
 
 })

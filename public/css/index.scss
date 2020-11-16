@@ -170,19 +170,16 @@ body {
 section {
     display: grid;
     grid-template-columns: repeat(6, auto);
-
     .project_div {
         background-color: black;
         height: 70vh;
         border-radius: 1%;
         max-width: 75vh;
         align-items: center;
-    
     }
     #project_one {
         background-image: url('../images/friendlywager.JPG');
         background-size: cover;
-
     }
     #project_two {
         background-image: url('../images/ow.png');
@@ -191,7 +188,6 @@ section {
     #project_three {
         background-image: url('../images/routeplanner.png');
         background-size: cover;
-
     }
     #project_four {
         background-image: url('../images/moviesaga.PNG');
@@ -200,7 +196,6 @@ section {
     #project_five {
         background-image: url('../images/pong.PNG');
         background-size: cover;
-
     }
     #project_six {
         background-image: url('../images/calculator.PNG');
@@ -218,17 +213,30 @@ section {
     border: 2px solid black;
     opacity: .8;
     border-radius: 5%;
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.19), 0 6px 6px 5px rgba(0, 0, 0, 0.23);
+    .transbox>* {
+        margin: 5%;
+        font-weight: bold;
+    }
+    span {
+        display: inline-block;
+        position: relative;
+    }
+    span::after {
+        content: '';
+        background: #f99e1a;
+        position: absolute;
+        display: block;
+        z-index: -1;
+        width: 100%;
+        height: 1.25rem;
+        margin-top: -1rem;
+        margin-left: .5rem;
+    } 
+
 }
 
-.transbox>* {
-    color: black;
-    margin: 5%;
-    font-weight: bold;
-}
 
-.exitbutton {
-    border-radius: 50%;
-}
 
 
 

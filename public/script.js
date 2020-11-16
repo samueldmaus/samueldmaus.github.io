@@ -49,7 +49,7 @@ anime({
 })
 
 // Email logic //
-$("#email_div").on('click', function(){
+$("#email_link").on('click', function(){
     window.location.href = "mailto:samueldmaus@gmail.com"
 })
 

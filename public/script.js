@@ -29,7 +29,7 @@ tl.add({
     delay: anime.stagger(100)
 })
 
-
+// animations for name logo
 anime({
     targets: '#logo path',
     strokeDashoffset: [anime.setDashoffset, 0],

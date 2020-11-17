@@ -5,6 +5,15 @@ $(document).ready(function(){
     $('.exitbutton').hide()
 })
 
+// keep navbar at top when scrolling
+$(document).on('scroll', function(){
+    if($(document).scrollTop() > 3){
+        $(".navbar").addClass("shadow");
+    }else {
+        $(".navbar").removeClass("shadow");
+    }
+})
+
 let tl = anime.timeline({
     easing: 'easeOutExpo',
     duration: 750,
@@ -29,42 +38,37 @@ tl.add({
     delay: anime.stagger(100)
 })
 
-// animations for name logo
+// animation for name logo
 anime({
     targets: '#logo path',
     strokeDashoffset: [anime.setDashoffset, 0],
     easing: 'easeInOutQuad',
     duration: 2000,
-    delay: 1000,
+    delay: function(el, i) { return i * 100 },
     direction: 'alternate',
     loop: true
 })
 
-anime({
-        targets: '.underline',
-        rotate: 360,
-        delay: 5000,
-        loop: true,
-        
-})
 
 // Email logic //
 $("#email_link").on('click', function(){
     window.location.href = "mailto:samueldmaus@gmail.com"
 })
 
-$()
+// Animation for project links
+let project_click_anime = anime({
+    targets: ".transbox.children('h2')",
+    delay: 100,
+    rotate: 360,
+    autoplay: false,
+})
 
 // PROJECTS //
 $(".project_div").on('click', function(){
-    let button = $(this).children('.exitbutton')
     let box = $(this).children('.transbox');
     box.show()
-    button.show()
 }).mouseleave(function(){
-    let button = $(this).children('.exitbutton')
     let box = $(this).children('.transbox');
-    button.hide()
     box.hide()
 })
 
